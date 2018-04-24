@@ -1,15 +1,13 @@
-﻿Imports Microsoft.VisualBasic
-Imports System
-Namespace HowtoCreateaFieldValueTemlate
+﻿Namespace HowtoCreateaFieldValueTemlate
 
 
-	Partial Public Class CategoryPictures
-	End Class
+    Partial Public Class CategoryPictures
+    End Class
 End Namespace
 
 Namespace HowtoCreateaFieldValueTemlate.CategoryPicturesTableAdapters
 
 
-	Partial Public Class CategoriesTableAdapter
-	End Class
+    Partial Public Class CategoriesTableAdapter
+    End Class
 End Namespace
