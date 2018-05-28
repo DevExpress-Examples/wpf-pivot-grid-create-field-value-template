@@ -1,13 +1,17 @@
-﻿namespace HowtoCreateaFieldValueTemlate {
-    
-    
-    public partial class CategoryPictures {
+﻿namespace HowToCreateFieldValueTemplate
+{
+
+
+    public partial class CategoryPictures
+    {
     }
 }
 
-namespace HowtoCreateaFieldValueTemlate.CategoryPicturesTableAdapters {
-    
-    
-    public partial class CategoriesTableAdapter {
+namespace HowToCreateFieldValueTemplate.CategoryPicturesTableAdapters
+{
+
+
+    public partial class CategoriesTableAdapter
+    {
     }
 }

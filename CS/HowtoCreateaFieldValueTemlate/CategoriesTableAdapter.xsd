@@ -4,7 +4,7 @@
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="nwindConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="nwindConnectionString (Settings)" PropertyReference="ApplicationSettings.HowtoCreateaFieldValueTemlate.Properties.Settings.GlobalReference.Default.nwindConnectionString" Provider="System.Data.OleDb" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="nwindConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="nwindConnectionString (Settings)" PropertyReference="ApplicationSettings.HowToCreateFieldValueTemplate.Properties.Settings.GlobalReference.Default.nwindConnectionString" Provider="System.Data.OleDb" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CategoriesTableAdapter" GeneratorDataComponentClassName="CategoriesTableAdapter" Name="Categories" UserDataComponentName="CategoriesTableAdapter">
@@ -86,7 +86,7 @@ FROM Categories
   <xs:element name="CategoryPictures" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="CategoryPictures" msprop:Generator_UserDSName="CategoryPictures">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Categories" msprop:Generator_TableClassName="CategoriesDataTable" msprop:Generator_TableVarName="tableCategories" msprop:Generator_TablePropName="Categories" msprop:Generator_RowDeletingName="CategoriesRowDeleting" msprop:Generator_UserTableName="Categories" msprop:Generator_RowChangingName="CategoriesRowChanging" msprop:Generator_RowEvHandlerName="CategoriesRowChangeEventHandler" msprop:Generator_RowDeletedName="CategoriesRowDeleted" msprop:Generator_RowEvArgName="CategoriesRowChangeEvent" msprop:Generator_RowChangedName="CategoriesRowChanged" msprop:Generator_RowClassName="CategoriesRow">
+        <xs:element name="Categories" msprop:Generator_TableClassName="CategoriesDataTable" msprop:Generator_TableVarName="tableCategories" msprop:Generator_TablePropName="Categories" msprop:Generator_RowDeletingName="CategoriesRowDeleting" msprop:Generator_RowChangingName="CategoriesRowChanging" msprop:Generator_RowEvHandlerName="CategoriesRowChangeEventHandler" msprop:Generator_RowDeletedName="CategoriesRowDeleted" msprop:Generator_UserTableName="Categories" msprop:Generator_RowChangedName="CategoriesRowChanged" msprop:Generator_RowEvArgName="CategoriesRowChangeEvent" msprop:Generator_RowClassName="CategoriesRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="CategoryID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnCategoryID" msprop:Generator_ColumnPropNameInRow="CategoryID" msprop:Generator_ColumnPropNameInTable="CategoryIDColumn" msprop:Generator_UserColumnName="CategoryID" type="xs:int" />

@@ -1,20 +1,20 @@
-﻿using System;
+﻿using DevExpress.Xpf.PivotGrid;
+using HowToCreateFieldValueTemplate.CategoryPicturesTableAdapters;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using DevExpress.Xpf.PivotGrid.Internal;
-using HowtoCreateaFieldValueTemlate.CategoryPicturesTableAdapters;
 
-namespace HowtoCreateaFieldValueTemlate {
+namespace HowToCreateFieldValueTemplate
+{
     public class CategoriesControl : Control, IWeakEventListener {
 
         #region static staff
         static CategoriesTableAdapter categoriesTableAdapter;
         static Dictionary<string, ImageSource> categoriesPictures;
-
         public static readonly DependencyProperty ImageSourceProperty;
 
         static CategoriesControl() {
@@ -73,7 +73,7 @@ namespace HowtoCreateaFieldValueTemlate {
             SetImageSource();
         }
         void SetImageSource() {
-            FieldValueItem item = this.DataContext as FieldValueItem;
+            FieldValueElementData item = this.DataContext as FieldValueElementData;
             if(item != null && !item.IsOthersRow && !string.IsNullOrEmpty(item.DisplayText)) {
                 ImageSource = CategoriesControl.GetImage(item.Value as string);
             } else {
