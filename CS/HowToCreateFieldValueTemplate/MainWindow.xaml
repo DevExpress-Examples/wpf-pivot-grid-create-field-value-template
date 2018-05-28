@@ -1,0 +1,35 @@
+﻿<Window x:Class="HowToCreateFieldValueTemplate.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+        xmlns:dxpg="http://schemas.devexpress.com/winfx/2008/xaml/pivotgrid"
+        xmlns:example="clr-namespace:HowToCreateFieldValueTemplate"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"        
+        Title="MainWindow" Height="350" Width="525" Loaded="Window_Loaded" >
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="CategoriesControl.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <DataTemplate x:Key="ProductsTemplate" >
+                <example:CategoriesControl />
+            </DataTemplate>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <dxpg:PivotGridControl HorizontalAlignment="Left" Name="pivotGridControl1"
+							   VerticalAlignment="Top">
+            <dxpg:PivotGridControl.Fields>
+                <dxpg:PivotGridField Name="fieldCountry" FieldName="Country" Area="ColumnArea" />
+                <dxpg:PivotGridField Name="fieldCustomer" FieldName="Sales Person" Area="ColumnArea" 
+									 Caption="Customer" />
+                <dxpg:PivotGridField Name="fieldYear" FieldName="OrderDate" Area="RowArea" 
+									 Caption="Year" GroupInterval="DateYear" />
+                <dxpg:PivotGridField Name="fieldCategoryName" FieldName="CategoryName" Area="RowArea" 
+									 ValueTemplate="{StaticResource  ResourceKey=ProductsTemplate}"
+									 Caption="Product Category"/>
+                <dxpg:PivotGridField Name="fieldExtendedPrice" FieldName="Extended Price"
+									 Area="DataArea" CellFormat="c0" />
+            </dxpg:PivotGridControl.Fields>
+        </dxpg:PivotGridControl>
+    </Grid>
+</Window>

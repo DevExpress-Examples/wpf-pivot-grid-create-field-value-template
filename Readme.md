@@ -1,8 +1,9 @@
 # How to: Create the Field Value Template
 
 
-<p>This example shows how to define a custom template used to present field values. The provided template is used to display images near the value text.</p>
+This example demonstrates how to define a custom template used to display field values. The template in this example displays field values with images, as shown in the picture below.
 
-<br/>
+![](~/images/CreateFieldValueTemplate.png)
+
 
 
