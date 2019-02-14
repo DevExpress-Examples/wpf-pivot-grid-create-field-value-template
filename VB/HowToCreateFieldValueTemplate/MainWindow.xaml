@@ -1,4 +1,4 @@
-<Window x:Class="HowToCreateFieldValueTemplate.MainWindow"
+﻿<Window x:Class="HowToCreateFieldValueTemplate.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
         xmlns:dxpg="http://schemas.devexpress.com/winfx/2008/xaml/pivotgrid"
