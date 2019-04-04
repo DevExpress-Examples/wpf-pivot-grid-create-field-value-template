@@ -3,7 +3,7 @@
 
 * [CategoriesControl.cs](./CS/HowtoCreateaFieldValueTemlate/CategoriesControl.cs) (VB: [CategoriesControl.vb](./VB/HowtoCreateaFieldValueTemlate/CategoriesControl.vb))
 * [CategoriesControl.xaml](./CS/HowtoCreateaFieldValueTemlate/CategoriesControl.xaml) (VB: [CategoriesControl.xaml](./VB/HowtoCreateaFieldValueTemlate/CategoriesControl.xaml))
-* [MainWindow.xaml](./CS/HowtoCreateaFieldValueTemlate/MainWindow.xaml) (VB: [MainWindow.xaml.vb](./VB/HowtoCreateaFieldValueTemlate/MainWindow.xaml.vb))
+* [MainWindow.xaml](./CS/HowtoCreateaFieldValueTemlate/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/HowtoCreateaFieldValueTemlate/MainWindow.xaml))
 * [MainWindow.xaml.cs](./CS/HowtoCreateaFieldValueTemlate/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/HowtoCreateaFieldValueTemlate/MainWindow.xaml.vb))
 * [Generic.xaml](./CS/HowtoCreateaFieldValueTemlate/Themes/Generic.xaml) (VB: [Generic.xaml](./VB/HowtoCreateaFieldValueTemlate/Themes/Generic.xaml))
 <!-- default file list end -->
