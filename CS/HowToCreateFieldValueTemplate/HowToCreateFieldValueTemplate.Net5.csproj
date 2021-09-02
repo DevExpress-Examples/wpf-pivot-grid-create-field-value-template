@@ -1,0 +1,65 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HowToCreateFieldValueTemplate</RootNamespace>
+    <AssemblyName>HowToCreateFieldValueTemplate</AssemblyName>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <UseWindowsForms>true</UseWindowsForms>
+    <UseWPF>true</UseWPF>
+    <Platforms>x86;AnyCPU</Platforms>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <DefaultItemExcludes>obj*/**</DefaultItemExcludes>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="CategoriesTableAdapter.cs">
+      <DependentUpon>CategoriesTableAdapter.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="CategoriesTableAdapter.xsc">
+      <DependentUpon>CategoriesTableAdapter.xsd</DependentUpon>
+    </None>
+    <None Update="CategoriesTableAdapter.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CategoriesTableAdapter.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="CategoriesTableAdapter.xss">
+      <DependentUpon>CategoriesTableAdapter.xsd</DependentUpon>
+    </None>
+    <AppDesigner Include="Properties\" />
+    <None Update="SalesPerson.xsc">
+      <DependentUpon>SalesPerson.xsd</DependentUpon>
+    </None>
+    <None Update="SalesPerson.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SalesPerson.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="SalesPerson.xss">
+      <DependentUpon>SalesPerson.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="nwind.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="DevExpress.Data" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Data.Desktop" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Mvvm" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.PivotGrid.Core" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Printing.Core" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Core" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.PivotGrid" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Printing" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Themes.All" Version="21.1.*-*" />
+    <PackageReference Include="System.Data.OleDB" Version="5.0" />
+  </ItemGroup>
+</Project>
