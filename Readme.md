@@ -3,12 +3,16 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E2191)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-# How to: Create a Field Value Template
+# Pivot Grid for WPF - How to Create a Field Value Template
 
-
-This example demonstrates how to define a custom template used to display field values. The template in this example displays field values with images, as shown in the picture below.
+This example shows how to define a custom template used to display field values. The template in this example displays field values with images, as shown in the picture below.
 
 ![](./images/CreateFieldValueTemplate.png)
 
+## Documentation
 
+- [Pivot Grid - Appearance](https://docs.devexpress.com/WPF/8399/controls-and-libraries/pivot-grid/appearance)
 
+## More Examples
+
+- [Pivot Grid for WPF - How to Edit a Cell with the Cell Editing Template](https://github.com/DevExpress-Examples/how-to-define-a-custom-cell-template-that-allows-performing-data-editing-t410760)
