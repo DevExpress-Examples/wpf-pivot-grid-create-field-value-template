@@ -51,15 +51,15 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="DevExpress.Data" Version="21.2.8" />
-    <PackageReference Include="DevExpress.Data.Desktop" Version="21.2.8" />
-    <PackageReference Include="DevExpress.Mvvm" Version="21.2.8" />
-    <PackageReference Include="DevExpress.PivotGrid.Core" Version="21.2.8" />
-    <PackageReference Include="DevExpress.Printing.Core" Version="21.2.8" />
-    <PackageReference Include="DevExpress.Wpf.Core" Version="21.2.8" />
-    <PackageReference Include="DevExpress.Wpf.PivotGrid" Version="21.2.8" />
-    <PackageReference Include="DevExpress.Wpf.Printing" Version="21.2.8" />
-    <PackageReference Include="DevExpress.Wpf.Themes.All" Version="21.2.8" />
+    <PackageReference Include="DevExpress.Data" Version="21.2.9" />
+    <PackageReference Include="DevExpress.Data.Desktop" Version="21.2.9" />
+    <PackageReference Include="DevExpress.Mvvm" Version="21.2.9" />
+    <PackageReference Include="DevExpress.PivotGrid.Core" Version="21.2.9" />
+    <PackageReference Include="DevExpress.Printing.Core" Version="21.2.9" />
+    <PackageReference Include="DevExpress.Wpf.Core" Version="21.2.9" />
+    <PackageReference Include="DevExpress.Wpf.PivotGrid" Version="21.2.9" />
+    <PackageReference Include="DevExpress.Wpf.Printing" Version="21.2.9" />
+    <PackageReference Include="DevExpress.Wpf.Themes.All" Version="21.2.9" />
     <PackageReference Include="System.Data.OleDB" Version="5.0" />
   </ItemGroup>
 </Project>
