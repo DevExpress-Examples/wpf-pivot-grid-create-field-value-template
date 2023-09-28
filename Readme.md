@@ -9,6 +9,16 @@ This example shows how to define a custom template used to display field values.
 
 ![](./images/CreateFieldValueTemplate.png)
 
+## Files to Review 
+
+* [MainWindow.xaml.cs](./CS/HowToCreateFieldValueTemplate
+/MainWindow.xaml.cs) / [MainWindow.xaml.vb](./VB/HowToCreateFieldValueTemplate
+/MainWindow.xaml.vb)
+
+* [MainWindow.xaml](./CS/HowToCreateFieldValueTemplate
+/MainWindow.xaml) / [MainWindow.xaml](./VB/HowToCreateFieldValueTemplate
+/MainWindow.xaml)
+
 ## Documentation
 
 - [Pivot Grid - Appearance](https://docs.devexpress.com/WPF/8399/controls-and-libraries/pivot-grid/appearance)
