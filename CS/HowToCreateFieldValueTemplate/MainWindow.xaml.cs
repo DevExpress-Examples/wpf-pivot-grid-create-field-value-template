@@ -16,8 +16,9 @@ namespace HowToCreateFieldValueTemplate
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e) {
-            DataSourceHelper dataSourceHelper = new DataSourceHelper();
-            dataSourceHelper.FillSalesPerson(salesPersonDataTable);
+            using (DataSourceHelper dataSourceHelper = new DataSourceHelper()) {
+                dataSourceHelper.FillSalesPerson(salesPersonDataTable);
+            }
         }
     }
 }
