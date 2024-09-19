@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System.Data;
+using System.Windows;
 
 namespace HowToCreateFieldValueTemplate
 {
@@ -6,9 +7,8 @@ namespace HowToCreateFieldValueTemplate
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window {
-        SalesPerson.SalesPersonDataTable salesPersonDataTable = new SalesPerson.SalesPersonDataTable();
-        SalesPersonTableAdapters.SalesPersonTableAdapter salesPersonDataAdapter = 
-            new SalesPersonTableAdapters.SalesPersonTableAdapter();
+
+        DataTable salesPersonDataTable = new DataTable();
 
         public MainWindow() {
             InitializeComponent();
@@ -16,7 +16,8 @@ namespace HowToCreateFieldValueTemplate
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e) {
-            salesPersonDataAdapter.Fill(salesPersonDataTable);
+            DataSourceHelper dataSourceHelper = new DataSourceHelper();
+            dataSourceHelper.FillSalesPerson(salesPersonDataTable);
         }
     }
 }

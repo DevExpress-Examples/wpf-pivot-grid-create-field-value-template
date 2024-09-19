@@ -1,67 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TargetFramework>net8.0-windows</TargetFramework>
-        <UseWPF>true</UseWPF>
-	  <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-  </PropertyGroup>
-  <ItemGroup>
-    <Compile Update="CategoriesTableAdapter.cs">
-      <DependentUpon>CategoriesTableAdapter.xsd</DependentUpon>
-    </Compile>
-    <Compile Update="CategoriesTableAdapter.Designer.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>CategoriesTableAdapter.xsd</DependentUpon>
-    </Compile>
-    <Compile Update="Properties\Settings.Designer.cs">
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Settings.settings</DependentUpon>
-    </Compile>
-    <Compile Update="SalesPerson.Designer.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>SalesPerson.xsd</DependentUpon>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Update="CategoriesTableAdapter.xsc">
-      <DependentUpon>CategoriesTableAdapter.xsd</DependentUpon>
-    </None>
-    <None Update="CategoriesTableAdapter.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>CategoriesTableAdapter.Designer.cs</LastGenOutput>
-    </None>
-    <None Update="CategoriesTableAdapter.xss">
-      <DependentUpon>CategoriesTableAdapter.xsd</DependentUpon>
-    </None>
-    <AppDesigner Include="Properties\" />
-    <None Update="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <None Update="SalesPerson.xsc">
-      <DependentUpon>SalesPerson.xsd</DependentUpon>
-    </None>
-    <None Update="SalesPerson.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>SalesPerson.Designer.cs</LastGenOutput>
-    </None>
-    <None Update="SalesPerson.xss">
-      <DependentUpon>SalesPerson.xsd</DependentUpon>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Update="nwind.mdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="DevExpress.Wpf.PivotGrid" Version="24.2.*-*" />
-    <PackageReference Include="DevExpress.Wpf.Themes.All" Version="24.2.*-*" />
-    <PackageReference Include="System.Data.OleDB" Version="5.0" />
-  </ItemGroup>
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net8.0-windows7.0</TargetFramework>
+		<UseWPF>true</UseWPF>
+		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+		<UseWindowsForms>True</UseWindowsForms>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+	  <WarningsNotAsErrors>DX1000</WarningsNotAsErrors>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+	  <WarningsNotAsErrors>DX1000</WarningsNotAsErrors>
+	</PropertyGroup>
+	<ItemGroup>
+		<AppDesigner Include="Properties\" />
+		<None Update="Data\nwind.db">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+	<ItemGroup>
+		<None Update="nwind.mdb">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="DevExpress.Wpf.PivotGrid" Version="24.2.*-*" />
+		<PackageReference Include="DevExpress.Wpf.Themes.All" Version="24.2.*-*" />
+		<PackageReference Include="Microsoft.Data.Sqlite" Version="8.0.8" />
+	</ItemGroup>
+	<ItemGroup>
+		<Folder Include="Data\" />
+	</ItemGroup>
 </Project>

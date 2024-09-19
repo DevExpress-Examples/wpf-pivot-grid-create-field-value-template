@@ -41,7 +41,7 @@
                 </dxpg:PivotGridField>
                 <dxpg:PivotGridField Name="fieldExtendedPrice" Area="DataArea" CellFormat="c0" >
                     <dxpg:PivotGridField.DataBinding>
-                        <dxpg:DataSourceColumnBinding ColumnName="Extended Price"/>
+                        <dxpg:DataSourceColumnBinding ColumnName="ExtendedPrice"/>
                     </dxpg:PivotGridField.DataBinding>
                 </dxpg:PivotGridField>
             </dxpg:PivotGridControl.Fields>

@@ -1,5 +1,4 @@
 ﻿using DevExpress.Xpf.PivotGrid;
-using HowToCreateFieldValueTemplate.CategoryPicturesTableAdapters;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -13,7 +12,7 @@ namespace HowToCreateFieldValueTemplate
     public class CategoriesControl : Control, IWeakEventListener {
 
         #region static staff
-        static CategoriesTableAdapter categoriesTableAdapter;
+        static DataSourceHelper dataSourceHelper;
         static Dictionary<string, ImageSource> categoriesPictures;
         public static readonly DependencyProperty ImageSourceProperty;
 
@@ -26,11 +25,11 @@ namespace HowToCreateFieldValueTemplate
             categoriesPictures = new Dictionary<string, ImageSource>();
         }
 
-        static CategoriesTableAdapter CategoriesTableAdapter {
+        static DataSourceHelper DataSourceHelper {
             get {
-                if(categoriesTableAdapter == null)
-                    categoriesTableAdapter = new CategoriesTableAdapter();
-                return categoriesTableAdapter;
+                if(dataSourceHelper == null)
+                    dataSourceHelper = new DataSourceHelper();
+                return dataSourceHelper;
             }
         }
 
@@ -39,7 +38,7 @@ namespace HowToCreateFieldValueTemplate
             if(categoriesPictures.ContainsKey(categoryName)) {
                 return categoriesPictures[categoryName];
             } else {
-                byte[] icon = CategoriesTableAdapter.GetIconImageByName(categoryName) as byte[];
+                byte[] icon = DataSourceHelper.GetIconImageByName(categoryName);
                 if(icon == null || icon.Length == 0) {
                     return null;
                 }
