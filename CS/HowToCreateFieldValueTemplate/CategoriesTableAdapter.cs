@@ -1,17 +1,13 @@
-﻿namespace HowToCreateFieldValueTemplate
-{
+﻿namespace HowToCreateFieldValueTemplate.Net5 {
 
 
-    public partial class CategoryPictures
-    {
+    public partial class CategoryPictures {
     }
 }
 
-namespace HowToCreateFieldValueTemplate.CategoryPicturesTableAdapters
-{
+namespace HowToCreateFieldValueTemplate.Net5.CategoryPicturesTableAdapters {
 
 
-    public partial class CategoriesTableAdapter
-    {
+    public partial class CategoriesTableAdapter {
     }
 }
