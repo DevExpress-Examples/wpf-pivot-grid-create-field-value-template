@@ -1,13 +1,11 @@
-﻿Namespace HowToCreateFieldValueTemplate
+Namespace HowToCreateFieldValueTemplate
 
-
-	Partial Public Class CategoryPictures
-	End Class
+    Public Partial Class CategoryPictures
+    End Class
 End Namespace
 
 Namespace HowToCreateFieldValueTemplate.CategoryPicturesTableAdapters
 
-
-	Partial Public Class CategoriesTableAdapter
-	End Class
+    Public Partial Class CategoriesTableAdapter
+    End Class
 End Namespace

@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
     <TargetFramework>net6.0-windows</TargetFramework>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <OutputType>WinExe</OutputType>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <AssemblyName>HowToCreateFieldValueTemplate</AssemblyName>
     <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
     <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
@@ -17,31 +19,14 @@
     <UseWPF>true</UseWPF>
     <Platforms>x86;AnyCPU</Platforms>
     <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
-    <DefaultItemExcludes>obj*/**</DefaultItemExcludes>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <EnableDefaultApplicationDefinition>false</EnableDefaultApplicationDefinition>
   </PropertyGroup>
   <ItemGroup>
-    <Import Include="Microsoft.VisualBasic" />
-    <Import Include="System.Collections.Generic" />
-    <Import Include="System.Collections" />
-    <Import Include="System.Diagnostics" />
-    <Import Include="System.Linq" />
-    <Import Include="System.Xml.Linq" />
-    <Import Include="System.Data" />
-    <Import Include="System.Drawing" />
-    <Import Include="System.Windows.Controls" />
-    <Import Include="System.Windows.Data" />
-    <Import Include="System.Windows.Shapes" />
-    <Import Include="System.Windows.Documents" />
-    <Import Include="System.Windows.Input" />
-    <Import Include="System.Windows.Media.Imaging" />
-    <Import Include="System.Windows.Media" />
-    <Import Include="System.Windows.Navigation" />
-    <Import Include="System.Windows" />
-    <Import Include="System" />
+    <ApplicationDefinition Include="App.xaml" />
   </ItemGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
   <ItemGroup>
     <Compile Update="CategoriesTableAdapter.vb">
       <DependentUpon>CategoriesTableAdapter.xsd</DependentUpon>
@@ -59,7 +44,7 @@
     <None Update="CategoriesTableAdapter.xss">
       <DependentUpon>CategoriesTableAdapter.xsd</DependentUpon>
     </None>
-    <AppDesigner Include="My Project\" />
+    <AppDesigner Include="Properties\" />
     <None Update="SalesPerson.xsc">
       <DependentUpon>SalesPerson.xsd</DependentUpon>
     </None>
@@ -78,15 +63,15 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="DevExpress.Data" Version="22.2.*-*" />
-    <PackageReference Include="DevExpress.Data.Desktop" Version="22.2.*-*" />
-    <PackageReference Include="DevExpress.Mvvm" Version="22.2.*-*" />
-    <PackageReference Include="DevExpress.PivotGrid.Core" Version="22.2.*-*" />
-    <PackageReference Include="DevExpress.Printing.Core" Version="22.2.*-*" />
-    <PackageReference Include="DevExpress.Wpf.Core" Version="22.2.*-*" />
-    <PackageReference Include="DevExpress.Wpf.PivotGrid" Version="22.2.*-*" />
-    <PackageReference Include="DevExpress.Wpf.Printing" Version="22.2.*-*" />
-    <PackageReference Include="DevExpress.Wpf.Themes.All" Version="22.2.*-*" />
+    <PackageReference Include="DevExpress.Data" Version="22.2.13" />
+    <PackageReference Include="DevExpress.Data.Desktop" Version="22.2.13" />
+    <PackageReference Include="DevExpress.Mvvm" Version="22.2.13" />
+    <PackageReference Include="DevExpress.PivotGrid.Core" Version="22.2.13" />
+    <PackageReference Include="DevExpress.Printing.Core" Version="22.2.13" />
+    <PackageReference Include="DevExpress.Wpf.Core" Version="22.2.13" />
+    <PackageReference Include="DevExpress.Wpf.PivotGrid" Version="22.2.13" />
+    <PackageReference Include="DevExpress.Wpf.Printing" Version="22.2.13" />
+    <PackageReference Include="DevExpress.Wpf.Themes.All" Version="22.2.13" />
     <PackageReference Include="System.Data.OleDB" Version="5.0" />
   </ItemGroup>
 </Project>
